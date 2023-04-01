@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="container">
+
+        <h1>Random Password Generator</h1>
+        <div id="output">
+            <input type="text" id="outputPassword" placeholder="Readonly" readonly />
+            <button id="copyBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 26 26"
+                    xml:space="preserve">
+                    <g fill="currentColor">
+                        <path
+                            d="M7.268 17H6V5h6v1a1 1 0 0 0 1 1h2.02a1 1 0 0 0 .578-1.816l-1.891-1.89c0-.002-.001-.002-.002-.002a.981.981 0 0 0-.291-.194c-.031-.014-.063-.022-.095-.034a1.012 1.012 0 0 0-.255-.051C13.042 3.011 13.022 3 13 3H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h2.268a1 1 0 1 0 0-2z">
+                        </path>
+                        <path
+                            d="M22.02 13a.998.998 0 0 0-.422-.816l-2.891-2.89a1.014 1.014 0 0 0-.293-.197c-.031-.013-.063-.022-.094-.033a.992.992 0 0 0-.258-.051C18.041 9.011 18.021 9 18 9h-7a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V13.099c.004-.034.02-.064.02-.099zM12 23V11h5v2a1 1 0 0 0 1 1h2v9h-8z">
+                        </path>
+                    </g>
+                </svg>
+                <span>Copy</span>
+            </button>
+        </div>
+
+
+        <div id="inputContainer">
+            <!-- <input type="number" id="pass_length" /> -->
+
+            <label for="range" id="outputRange">Password Length 4</label>
+            <input type="range" min="4" value="4" max="64" id="inputRange">
+
+            <label for="capitalLaterEl">Capital Laters</label>
+            <input type="checkbox" id="capitalLaterEl" checked>
+
+            <label for="smallLaterEl">Small Laters</label>
+            <input type="checkbox" id="smallLaterEl" checked>
+
+            <label for="numbersEl">Numbers</label>
+            <input type="checkbox" id="numbersEl" checked>
+
+            <label for="symbolsEl">Symbols</label>
+            <input type="checkbox" id="symbolsEl" checked>
+        </div>
+        <button id="generatePasswordBtn">Generate Password</button>
+    </div>
+</body>
+
+</html>
